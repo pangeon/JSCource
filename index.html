@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>CALC 0.1</title>
+        <script>
+            var operator = prompt('Choose operator: sum, subs, mult, div');
+            var a = prompt('Enter first number');
+            var b = prompt('Enter second number');
+
+            switch(operator) {
+                case 'sum':
+                    alert(parseInt(a) + parseInt(b));
+                    break;
+                case 'subs':
+                    alert(parseInt(a) - parseInt(b));
+                    break;
+                case 'mult':
+                    alert(parseInt(a) * parseInt(b));
+                    break;
+                case 'div':
+                    if(parseInt(a) / parseInt(b) === Infinity) {
+                        alert('Operation error');
+                    } else {
+                        alert(parseInt(a) / parseInt(b));
+                    }
+                    break;
+                default:
+                    alert('Unspported operation');
+            }
+        </script>
+    </head>
+    
+    <body>
+
+    </body>
+</html>
